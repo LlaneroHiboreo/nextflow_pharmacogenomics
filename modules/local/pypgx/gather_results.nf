@@ -1,7 +1,7 @@
 process GATHER_RESULTS{
     label 'process_medium'
 
-    container "<container>"
+    container 'quay.io/biocontainers/pypgx:0.21.0--pyh7cba7a3_0'
 
     input:
         tuple val(meta), path(results_no_alleles)
