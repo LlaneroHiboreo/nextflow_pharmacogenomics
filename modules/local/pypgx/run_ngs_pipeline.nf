@@ -1,7 +1,7 @@
 process RUN_NGS_PIPELINE{
     label 'process_medium'
 
-    container '<container>'
+    container 'quay.io/biocontainers/pypgx:0.21.0--pyh7cba7a3_0'
 
     input:
         tuple val(meta), path(input_vcf), path(tbi), path(coverage), path(control_stats), val(meta4), path(panel), path(panel_index), path(cnv_callers)
