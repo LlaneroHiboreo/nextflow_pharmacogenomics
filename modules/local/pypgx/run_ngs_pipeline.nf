@@ -1,7 +1,7 @@
 process RUN_NGS_PIPELINE{
     label 'process_medium'
 
-    container '/scratch_isilon/groups/dat/apps/PYPGX/0.21.0/pypgx_0.21.0.sif'
+    container '<container>'
 
     input:
         tuple val(meta), path(input_vcf), path(tbi), path(coverage), path(control_stats), val(meta4), path(panel), path(panel_index), path(cnv_callers)
