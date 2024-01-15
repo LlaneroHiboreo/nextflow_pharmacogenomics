@@ -1,7 +1,7 @@
 process PREPARE_DEPTH_COVERAGE{
     label 'process_medium'
 
-    container '/scratch_isilon/groups/dat/apps/PYPGX/0.21.0/pypgx_0.21.0.sif'
+    container 'container <container>'
 
     input:
         tuple val(meta), path(bam), path(bai)
