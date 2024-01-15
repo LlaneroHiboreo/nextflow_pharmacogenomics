@@ -1,7 +1,7 @@
 process COMPUTE_CONTROL_STATISTICS{
     label 'process_medium'
 
-    container <container>
+    container 'quay.io/biocontainers/pypgx:0.21.0--pyh7cba7a3_0'
 
     input:
         tuple val(meta), path(bam), path(bai)
