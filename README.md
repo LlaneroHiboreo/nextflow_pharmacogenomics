@@ -1,6 +1,8 @@
 # nextflow_pharmacogenomics
 Pipeline for pharmacogenomics research based on PyPGx package
 
+[Pipeline Structure](./assets/pcgx.png)
+
 ## Overview
 This document describes the usage of a Nextflow workflow designed for running pharmacogenomics analysis. This workflow is configured to be run with Singularity containers, ensuring reproducibility across different computing environments.
 
